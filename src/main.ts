@@ -23,8 +23,9 @@ async function bootstrap() {
   console.log(`Application is running on: ${await app.getUrl()}`);
 
   // get the swagger json file (if app is running in development mode)
+  console.log(process.env.NODE_ENV);
   if (process.env.NODE_ENV === 'development') {
-    const serverURL = "https://nest-swagger-git-master-cakrads.vercel.app";
+    const serverURL = "http://localhost:3000";
 
     // write swagger ui files
     get(
