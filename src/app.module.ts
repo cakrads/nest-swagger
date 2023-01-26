@@ -8,8 +8,7 @@ import { ConfigModule } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot(),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'swagger-static'),
-      serveRoot: process.env.NODE_ENV === 'development' ? '/' : '/api',
+      rootPath: join(__dirname, '..', 'swagger1'),
     }),
     CatsModule
   ],
