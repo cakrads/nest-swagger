@@ -8,7 +8,7 @@ import { ConfigModule } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot(),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'swagger1'),
+      rootPath: join(__dirname, '..', 'public'),
     }),
     CatsModule
   ],
